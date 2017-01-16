@@ -1,0 +1,175 @@
+section.pannels
+
+  .sprachen
+    position: absolute
+    height: 684px
+    width: 300px
+    background-color: $pannel-background
+    right: -300px
+    top: 85px
+    z-index: 5
+    +pannel-shadow
+    transition: 300ms
+    color: $pannel-font-color
+
+    ul
+      list-style: none
+
+      li
+        border-bottom: solid 1px $pannel-border-color
+        font-size: 25px
+        padding: 0 10px
+        img
+          width: 25px
+
+
+  .alter
+    position: absolute
+    height: 684px
+    width: 300px
+    background-color: $pannel-background
+    right: -300px
+    top: 85px
+    z-index: 5
+    +pannel-shadow
+    transition: 300ms
+    color: $pannel-font-color
+    padding: 20px
+
+    input[type="radio"]
+      display: none
+
+    label
+      display: block
+      fill: $alter-fill
+
+    svg
+      width: 100px
+
+    input[type="radio"]:checked + label
+      fill: $alter-fill-activ
+
+  .open-r
+    right: 0px
+
+
+
+.map
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 1
+  background-color: $map-background
+
+  svg
+    width: 80%
+    margin: 100px
+
+
+    .cls-1
+    fill: $map-zone3
+
+    .cls-2
+      fill: $map-zone2
+
+    .cls-3
+      fill: $map-zone1
+      stroke: $map-zone1-outline
+      stroke-width: 3px
+      stroke-miterlimit: 10
+
+    .cls-4, .cls-6
+      stroke-miterlimit: 10
+
+    .cls-4, .cls-6
+      fill: none
+
+    .cls-4
+      stroke: $map-lines
+
+    .cls-5
+      fill: $map-point
+
+    .cls-6
+      stroke: $map-activ
+
+    .cls-7
+      fill: $map-activ
+
+    .st7
+      font-size: 10px
+      fill: black
+
+    .st5
+      fill: none
+      stroke: $map-activ
+
+    .st6
+      fill: $map-activ
+
+    #aktiv
+      display: none
+
+    #aktiv2
+      display: none
+
+    .point
+      cursor: pointer
+
+  .sights
+    display: none
+
+  .aktiv
+    display: block
+
+.snoop
+  z-index: 10
+  position: absolute
+  bottom: 0
+  left: calc(50% - 250px)
+  animation-name: snoop
+  animation-duration: 6s
+  animation-fill-mode: forwards
+
+@keyframes snoop
+  0%
+    bottom: -520px
+  100%
+    bottom: -13px
+
+
+.kaufen
+  position: absolute
+  height: 610px
+  width: 700px
+  bottom: -610px
+  background-color: $pannel-background
+  z-index: 5
+  left: calc(50% - 350px)
+  +pannel-shadow
+  transition: 300ms
+  padding: 10px
+
+  .rout
+    width: 100%
+    height: 100px
+    border: solid 1px $red
+    margin-bottom: 10px
+
+  .price
+    width: calc(50% - 5px)
+    height: calc(100% - 110px)
+    border: solid 1px $blue
+    float: left
+    margin-right: 10px
+
+  .payment
+    width: calc(50% - 5px)
+    height: calc(100% - 110px)
+    border: solid 1px $green
+    float: left
+
+.open-d
+  bottom: 0
