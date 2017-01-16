@@ -44,10 +44,18 @@ jQuery('.quantity').each(function() {
     $('.alter').addClass('open-r');
     return false;
   });
+
+  var tourist_btn = false;
   $('#tourist').bind('click', function() {
-    $('#sights').css({'display':'block'});
-    return false;
+    if (tourist_btn == false){
+      $('#sights').css({'display':'block'});
+      tourist_btn = true;}
+    else {
+      $('#sights').css({'display':'none'});
+        tourist_btn = false;}
+    //return false;
   });
+
   $('#info').bind('click', function() {
     $('.info').addClass('open-r');
     return false;
