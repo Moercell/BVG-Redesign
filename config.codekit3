@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25479",
 "files": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/css\/.sass-cache\/0ba21ae1ac3e7b555e58cb279a0206f506feb796\/_animation.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -2687,7 +2693,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 506267481,
-	"displayValue": "BVG-Redesign",
+	"displayValue": "bvg",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-doge"
 	},
