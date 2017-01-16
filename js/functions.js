@@ -45,6 +45,16 @@ jQuery('.quantity').each(function() {
     return false;
   });
 
+  var bike_btn = false;
+  $('#fahrrad').bind('click', function() {
+    if (bike_btn == false){
+      $('.fa-bicycle').css({'opacity':'0.5'});
+      bike_btn = true;}
+    else {
+      $('.fa-bicycle').css({'opacity':'1'});
+        bike_btn = false;}
+  });
+
   var tourist_btn = false;
   $('#tourist').bind('click', function() {
     if (tourist_btn == false){
